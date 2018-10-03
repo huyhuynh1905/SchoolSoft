@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="1015.0" style="-fx-background-color: #282D39;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginApp.Control.AccontControl">
+   <children>
+      <Label alignment="CENTER" layoutX="345.0" layoutY="39.0" prefHeight="55.0" prefWidth="325.0" style="-fx-background-radius: 0; -fx-border-width: 1; -fx-border-color: white;" text="Thông Tin Tài Khoản" textFill="#30c4ff">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="172.0" prefHeight="27.0" prefWidth="103.0" text="Username   :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="221.0" prefHeight="27.0" prefWidth="103.0" text="Email          :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="265.0" prefHeight="27.0" prefWidth="103.0" text="Điện thoại  :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="489.0" layoutY="115.0" orientation="VERTICAL" prefHeight="284.0" prefWidth="12.0" />
+      <JFXButton fx:id="btnChange" layoutX="329.0" layoutY="357.0" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #9eaf2f;" text="Đổi Mật Khẩu" textFill="#f8ffe6">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtUser" editable="false" focusColor="#9cb4fc" layoutX="230.0" layoutY="170.0" maxWidth="217.0" minWidth="217.0" prefHeight="31.0" prefWidth="217.0" style="-fx-text-fill: white;" unFocusColor="#4d5223">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" editable="false" focusColor="#9cb4fc" layoutX="231.0" layoutY="221.0" maxWidth="217.0" minWidth="217.0" prefHeight="31.0" prefWidth="217.0" style="-fx-text-fill: white;" unFocusColor="#4d5223">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPhone" editable="false" focusColor="#9cb4fc" layoutX="231.0" layoutY="266.0" maxWidth="217.0" minWidth="217.0" prefHeight="31.0" prefWidth="217.0" style="-fx-text-fill: white;" unFocusColor="#4d5223">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="521.0" layoutY="172.0" prefHeight="27.0" prefWidth="103.0" text="Old Pass    :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="221.0" prefHeight="27.0" prefWidth="103.0" text="New Pass   :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="265.0" prefHeight="27.0" prefWidth="103.0" text="Confirm     :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnOk" disable="true" layoutX="533.0" layoutY="355.0" style="-fx-background-color: #d36b6b; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="Xác Nhận" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtOldPass" editable="false" focusColor="#62fffa" layoutX="622.0" layoutY="171.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtNewPass" editable="false" focusColor="#62fffa" layoutX="624.0" layoutY="222.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtConfirm" editable="false" focusColor="#62fffa" layoutX="622.0" layoutY="261.0" maxWidth="200.0" minWidth="200.0" prefHeight="31.0" prefWidth="200.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnAdd" disable="true" layoutX="155.0" layoutY="357.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #5f56ff;" text="Thêm Tài Khoản" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnHuy" disable="true" layoutX="688.0" layoutY="355.0" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #7C2C6C; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="Huỷ" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnXoa" disable="true" layoutX="866.0" layoutY="357.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #ff3b3b; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="Xoá Tài Khoản" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <ListView fx:id="lvUser" layoutX="844.0" layoutY="86.0" prefHeight="239.0" prefWidth="157.0" />
+   </children>
+</AnchorPane>

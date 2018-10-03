@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="homePane" prefHeight="550.0" prefWidth="1279.0" style="-fx-background-color: #282D39;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginApp.Control.HomeControl">
+   <children>
+      <VBox layoutX="17.0" layoutY="33.0" prefHeight="650.0" prefWidth="277.0" style="-fx-background-color: #353D6B;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="panLogo" prefHeight="193.0" prefWidth="277.0" style="-fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="72.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/applogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="28.0" layoutY="131.0" prefHeight="50.0" prefWidth="206.0" text="School Soft" textFill="#e6ffbf">
+                     <font>
+                        <Font name="System Bold Italic" size="32.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <JFXButton id="btnSinhVien" fx:id="btnSinhVien" onAction="#handClick" prefHeight="60.0" prefWidth="300.0" stylesheets="@../CssFile/buttonfocus.css" text="Sinh Viên" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnGV" fx:id="btnGiaoVien" onAction="#handClick" prefHeight="60.0" prefWidth="300.0" stylesheets="@../CssFile/buttonfocus.css" text="Giáo Viên" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnLop" fx:id="btnLop" onAction="#handClick" prefHeight="60.0" prefWidth="276.0" stylesheets="@../CssFile/buttonfocus.css" text="Lớp" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnKhoa" fx:id="btnKhoa" onAction="#handClick" prefHeight="60.0" prefWidth="300.0" stylesheets="@../CssFile/buttonfocus.css" text="Khoa" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnKhoa" fx:id="btnAccount" onAction="#handClick" prefHeight="60.0" prefWidth="300.0" stylesheets="@../CssFile/buttonfocus.css" text="Account" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="panStatus" layoutX="263.0" layoutY="33.0" prefHeight="168.0" prefWidth="1015.0" style="-fx-background-color: #C4526E;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="lblStatus" layoutX="54.0" layoutY="72.0" text="Sinh Viên" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="39.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-2.0" layoutY="-33.0" orientation="VERTICAL" prefHeight="234.0" prefWidth="10.0" />
+         </children>
+      </Pane>
+      <JFXToolbar fx:id="toolBarR" layoutX="263.0" layoutY="-3.0" prefHeight="36.0" prefWidth="1015.0" style="-fx-background-color: #282D39;" AnchorPane.rightAnchor="0.0">
+         <right>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="328.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblWelcome" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="251.0" text="Wellcome, " textFill="#6ba9ff">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnLogout" onAction="#logOutAccount" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #49c2ff; -fx-background-radius: 10;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </right>
+      </JFXToolbar>
+      <AnchorPane fx:id="panScence" layoutX="263.0" layoutY="201.0" prefHeight="447.0" prefWidth="1015.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

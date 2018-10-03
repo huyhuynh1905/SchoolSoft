@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="1015.0" style="-fx-background-color: #282D39;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginApp.Control.GiaoVienControl">
+   <children>
+      <TableView fx:id="tablegv" layoutY="88.0" prefHeight="368.0" prefWidth="755.0" stylesheets="@../CssFile/Colum.css">
+        <columns>
+          <TableColumn fx:id="idgv" prefWidth="57.66666793823242" text="Mã SV" />
+          <TableColumn fx:id="hogv" prefWidth="130.3333282470703" text="Họ" />
+            <TableColumn fx:id="tengv" prefWidth="59.66667175292969" text="Tên SV" />
+            <TableColumn fx:id="ngaysinhgv" prefWidth="97.66665649414062" text="Ngày Sinh" />
+            <TableColumn fx:id="sexgv" prefWidth="71.0" text="Giới Tính" />
+            <TableColumn fx:id="phonegv" prefWidth="82.0" text="Phone" />
+            <TableColumn fx:id="diachigv" prefWidth="178.0" text="Địa Chỉ" />
+            <TableColumn fx:id="khoagv" prefWidth="76.33331298828125" text="Khoa" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" layoutX="129.0" layoutY="12.0" prefHeight="66.0" prefWidth="617.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="txtFindgv" maxWidth="311.0" minWidth="128.0" prefHeight="31.0" prefWidth="311.0" promptText="Tìm Kiếm Danh Sách" style="-fx-background-radius: 0; -fx-border-radius: 0; -fx-border-width: 0px 0px 0px 0px; -fx-background-color: #F1FF96;" unFocusColor="#4400e4" />
+         </children>
+      </HBox>
+      <VBox layoutX="755.0" prefHeight="456.0" prefWidth="260.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="89.0" prefWidth="260.0" stylesheets="@../CssFile/buttonfocus.css">
+               <children>
+                  <JFXButton id="btnNhoSV" fx:id="btnThemgv" onAction="#onThemSua" prefHeight="86.0" prefWidth="86.0" style="-fx-background-color: #008227; -fx-background-radius: 0;" text="Thêm" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="btnNhoSV" fx:id="btnSuagv" onAction="#onThemSua" prefHeight="86.0" prefWidth="86.0" style="-fx-background-radius: 0; -fx-background-color: #FFD260;" text="Sửa" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnXoagv" prefHeight="86.0" prefWidth="86.0" style="-fx-background-color: #ff8263; -fx-background-radius: 0;" text="Xoá" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtMagv" editable="false" focusColor="#f3fc57" promptText="Mã GV" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtHogv" editable="false" focusColor="#f3fc57" promptText="Họ và tên đệm" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtTengv" editable="false" focusColor="#f3fc57" promptText="Tên" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <DatePicker fx:id="bDategv" disable="true" prefHeight="25.0" prefWidth="194.0" promptText="Ngày Sinh" />
+            <HBox prefHeight="24.0" prefWidth="260.0" spacing="20.0">
+               <children>
+                  <RadioButton fx:id="radNamgv" disable="true" mnemonicParsing="false" text="Nam" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radNugv" disable="true" mnemonicParsing="false" text="Nữ" textFill="WHITE" toggleGroup="$sex">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <JFXComboBox fx:id="comKhoa" disable="true" prefHeight="27.0" prefWidth="125.0" promptText="Khoa" style="-fx-background-color: #93D2FFa3; -fx-background-radius: 0; -fx-border-color: #fff;" />
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtPhonegv" editable="false" focusColor="#f3fc57" promptText="Phone" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtDiachigv" editable="false" focusColor="#f3fc57" promptText="Địa chỉ" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="260.0" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="btnAdd" disable="true" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #ffff42a3;" text="Add" textFill="#e40000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnOKgv" disable="true" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #7A1919a3;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="ss" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #2D3447;" stylesheets="@../CssFile/Logincss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginApp.Control.SignUpControl">
+   <children>
+      <TextField fx:id="txtUserR" layoutX="108.0" layoutY="84.0" prefHeight="40.0" prefWidth="353.0" promptText="User name" style="-fx-background-color: #2D3447; -fx-text-fill: white; -fx-border-color: #00FFC7; -fx-border-width: 0px 0px 1px 0px;" AnchorPane.leftAnchor="108.0" />
+      <TextField fx:id="txtPhoneR" layoutX="105.0" layoutY="204.0" prefHeight="40.0" prefWidth="353.0" promptText="Your Phone" style="-fx-background-color: #2D3447; -fx-text-fill: white; -fx-border-color: #00FFC7; -fx-border-width: 0px 0px 1px 0px;" AnchorPane.bottomAnchor="155.0" />
+      <PasswordField fx:id="txtPassR" layoutX="93.0" layoutY="157.0" prefHeight="40.0" prefWidth="353.0" promptText="Your Password" style="-fx-background-color: #2D3447; -fx-text-fill: white; -fx-border-color: #00FFC7; -fx-border-width: 0px 0px 1px 0px;" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="108.0" />
+      <Text fill="#e8d54c" layoutX="227.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="76.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="76.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/lock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="76.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/phone-receiver.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSignUpR" layoutX="150.0" layoutY="284.0" onAction="#setBtnSignUpR" prefHeight="40.0" prefWidth="243.0" style="-fx-background-color: #2f2f2fa3; -fx-background-radius: 1; -fx-border-color: white;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLoginR" layoutX="458.0" layoutY="342.0" onAction="#setBtnLoginR" ripplerFill="WHITE" style="-fx-background-color: #2f2f2fa3; -fx-background-radius: 100; -fx-border-color: #00ffc5; -fx-border-radius: 100;" text="Login" textFill="#9dff00" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

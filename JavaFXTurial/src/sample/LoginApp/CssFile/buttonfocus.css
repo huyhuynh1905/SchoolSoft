@@ -1,0 +1,25 @@
+#btnSinhVien:focused {
+    -fx-background-color: #333338;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+#btnGV:focused {
+    -fx-background-color: #333338;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+#btnLop:focused {
+    -fx-background-color: #333338;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+#btnKhoa:focused {
+    -fx-background-color: #333338;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+#btnNhoSV:focused {
+    -fx-background-color: #333338;
+    -fx-border-color: #fff;
+    -fx-border-width: 0px 0px 2px 0px;
+}
